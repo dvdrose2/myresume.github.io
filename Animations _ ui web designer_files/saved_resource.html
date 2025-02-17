@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- saved from url=(0012)about:srcdoc -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+	html {
+		overflow: hidden;
+	}
+
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+ 	}
+
+ 	iframe {
+ 		max-width: 100%;
+ 	}
+</style>
+</head>
+	<body> <script>
+  const bubbles = document.querySelectorAll('.bubble');
+
+  document.addEventListener('mousemove', (event) => {
+    bubbles.forEach(bubble => {
+      bubble.style.left = `${event.clientX - 10}px`; /* Adjust offset for bubble positioning */
+      bubble.style.top = `${event.clientY - 10}px`; /* Adjust offset for bubble positioning */
+    });
+  });
+</script>
+</body></html>
